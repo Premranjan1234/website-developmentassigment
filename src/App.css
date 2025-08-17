@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@keyframes fadeUpLoop {
+    0%, 100% {
+      opacity: 0.8; /* Reduced from 0 */
+      transform: translateY(8px); /* Less movement */
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulseTextLoop {
+    0%, 100% {
+      opacity: 0.85; /* Reduced from 0.6 */
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-up-loop {
+    animation: fadeUpLoop 2s ease-in-out infinite;
+  }
+  
+  .animate-pulse-text-loop {
+    animation: pulseTextLoop 1s ease-in-out infinite;
+  }
+  
+  @keyframes spinSlow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spinSlow 20s linear infinite;
+  }
+  
